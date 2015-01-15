@@ -1,8 +1,19 @@
+/**
+ *@file
+ */
+
 typedef struct node *Node;
 
 extern Node cursor;
 
 extern Node list;
+
+/**
+ * Reads a line of text from a file
+ * @param dest Destination of read line
+ * @param n Maximum length of a line
+ * @param source Source of the line.
+ */
 
 void readline(char *dest, int n, FILE *source);
 

@@ -11,6 +11,7 @@ typedef struct node{
 Node cursor;
 Node list = NULL;
 
+
 void readline(char *dest, int n, FILE *source){
   fgets(dest, n, source);
   int len = strlen(dest);
@@ -118,3 +119,4 @@ void printDB(Node cursor){
     cursor = cursor->next;
   }
 }
+

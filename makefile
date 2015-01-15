@@ -24,3 +24,10 @@ test: db_test.c treedb.c treedb.h
 	./t
 
 run: all
+
+.PHONY: clean
+
+clean:
+	rm -rf *.o
+	rm -rf t
+	rm -rf db

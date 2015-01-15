@@ -85,9 +85,7 @@ Tree findKey(Tree cursor, char *buffer){
   }
   return NULL;
 }
-/*
-  ändra så att det blir en valbuf och keybuf så värderna sätts i mainfunktionen
-*/
+
 Tree updateValue(char *buffer, char *valbuf, Tree cursor){
   //searches for the entry it wants to update, as long as it hasn't reached the end of the tree
   free(cursor->value);
